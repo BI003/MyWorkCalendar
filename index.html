@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Мой рабочий календарь</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Мой рабочий календарь</h1>
+        
+        <div class="calendar-layout">
+            <div class="calendar">
+
+                <div class="month">
+                    <button id="prevMonth"><-</button>
+                    <span id="monthTitle">Октябрь 2026</span>
+                    <button id="nextMonth">-></button>
+                </div>
+
+                <div class="weekdays">
+                    <div>Пн</div>
+                    <div>Вт</div>
+                    <div>Ср</div>
+                    <div>Чт</div>
+                    <div>Пт</div>
+                    <div>Сб</div>
+                    <div>Вс</div>
+                </div>
+
+                <div class="days"></div>
+
+            </div>
+
+            
+            <div class="day-info" id="dayInfo">
+
+                <div class="day-info-header">
+                    <h2 id="selectedDate">Выберите день</h2>
+
+                    <button id="addShift">+</button>
+                </div>
+
+                <h3>Длительность</h3>
+
+                <div class="time-fields">
+
+                    <div>
+                        <label for="startTime">Начало</label>
+                        <input type="text" id="startTime" placeholder="08:00">
+                    </div>
+
+                    <div>
+                        <label for="endTime">Конец</label>
+                        <input type="text" id="endTime" placeholder="16:30">
+                    </div>
+
+                </div>
+
+                <button id="paymentType">Тип оплаты ▼</button>
+
+                <div class="payment-fields">
+
+                    <div>
+                        <label for="hourlyRate">Ставка</label>
+                        <input type="text" id="hourlyRate" placeholder="15,00 €">
+                    </div>
+
+                    <div>
+                        <label for="paidHours">Оплачиваемое время</label>
+                        <input type="text" id="paidHours" placeholder="8,5 ч">
+                    </div>
+
+                </div>
+
+                <h3>Заметка</h3>
+
+                <textarea id="dayNote" placeholder="Заметка о рабочем дне"></textarea>
+
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
